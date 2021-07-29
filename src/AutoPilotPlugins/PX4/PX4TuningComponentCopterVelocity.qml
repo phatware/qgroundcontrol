@@ -51,25 +51,25 @@ ColumnLayout {
                     title:          qsTr("Proportional gain (MPC_XY_VEL_P_ACC)")
                     description:    qsTr("Increase for more responsiveness, reduce if the velocity overshoots (and increasing D does not help).")
                     param:          "MPC_XY_VEL_P_ACC"
-                    min:            1.2
-                    max:            5
-                    step:           0.05
+                    min:            0
+                    max:            1
+                    step:           0.001
                 }
                 ListElement {
                     title:          qsTr("Integral gain (MPC_XY_VEL_I_ACC)")
                     description:    qsTr("Increase to reduce steady-state error (e.g. wind)")
                     param:          "MPC_XY_VEL_I_ACC"
-                    min:            0.2
-                    max:            10
-                    step:           0.2
+                    min:            0
+                    max:            1
+                    step:           0.001
                 }
                 ListElement {
                     title:          qsTr("Differential gain (MPC_XY_VEL_D_ACC)")
                     description:    qsTr("Damping: increase to reduce overshoots and oscillations, but not higher than really needed.")
                     param:          "MPC_XY_VEL_D_ACC"
-                    min:            0.1
-                    max:            2
-                    step:           0.05
+                    min:            0
+                    max:            1
+                    step:           0.001
                 }
             }
         }
@@ -84,25 +84,25 @@ ColumnLayout {
                     title:          qsTr("Proportional gain (MPC_Z_VEL_P_ACC)")
                     description:    qsTr("Increase for more responsiveness, reduce if the velocity overshoots (and increasing D does not help).")
                     param:          "MPC_Z_VEL_P_ACC"
-                    min:            2
-                    max:            15
-                    step:           0.5
+                    min:            0
+                    max:            1
+                    step:           0.001
                 }
                 ListElement {
                     title:          qsTr("Integral gain (MPC_Z_VEL_I_ACC)")
                     description:    qsTr("Increase to reduce steady-state error")
                     param:          "MPC_Z_VEL_I_ACC"
-                    min:            0.2
-                    max:            3
-                    step:           0.05
+                    min:            0
+                    max:            1
+                    step:           0.001
                 }
                 ListElement {
                     title:          qsTr("Differential gain (MPC_Z_VEL_D_ACC)")
                     description:    qsTr("Damping: increase to reduce overshoots and oscillations, but not higher than really needed.")
                     param:          "MPC_Z_VEL_D_ACC"
                     min:            0
-                    max:            2
-                    step:           0.05
+                    max:            1
+                    step:           0.001
                 }
             }
         }
