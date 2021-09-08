@@ -52,6 +52,7 @@ linux {
         DEFINES += QGC_GST_TAISYNC_ENABLED
         DEFINES += QGC_GST_MICROHARD_ENABLED 
         QMAKE_CXXFLAGS_WARN_ON += -Werror \
+            -Wno-deprecated-copy \
             -Wno-unused-parameter \             # gst_plugins-good has these errors
             -Wno-implicit-fallthrough \         # gst_plugins-good has these errors
             -Wno-unused-command-line-argument \ # from somewhere in Qt generated build files
@@ -111,6 +112,7 @@ linux {
         }
         QMAKE_CXXFLAGS += -fvisibility=hidden
         QMAKE_CXXFLAGS_WARN_ON += -Werror \
+            -Wno-deprecated-copy \
             -Wno-unused-parameter           # gst-plugins-good
     } else {
         error("Unsupported Mac toolchain, only 64-bit LLVM+clang is supported")
