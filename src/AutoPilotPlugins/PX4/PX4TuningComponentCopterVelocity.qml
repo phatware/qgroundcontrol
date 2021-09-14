@@ -53,7 +53,7 @@ ColumnLayout {
                     param:          "MPC_XY_VEL_P_ACC"
                     min:            0
                     max:            1
-                    step:           0.001
+                    step:           0.01
                 }
                 ListElement {
                     title:          qsTr("Integral gain (MPC_XY_VEL_I_ACC)")
@@ -61,7 +61,7 @@ ColumnLayout {
                     param:          "MPC_XY_VEL_I_ACC"
                     min:            0
                     max:            1
-                    step:           0.001
+                    step:           0.01
                 }
                 ListElement {
                     title:          qsTr("Differential gain (MPC_XY_VEL_D_ACC)")
@@ -69,7 +69,7 @@ ColumnLayout {
                     param:          "MPC_XY_VEL_D_ACC"
                     min:            0
                     max:            1
-                    step:           0.001
+                    step:           0.005
                 }
             }
         }
@@ -86,7 +86,7 @@ ColumnLayout {
                     param:          "MPC_Z_VEL_P_ACC"
                     min:            0
                     max:            1
-                    step:           0.001
+                    step:           0.01
                 }
                 ListElement {
                     title:          qsTr("Integral gain (MPC_Z_VEL_I_ACC)")
@@ -94,7 +94,7 @@ ColumnLayout {
                     param:          "MPC_Z_VEL_I_ACC"
                     min:            0
                     max:            1
-                    step:           0.001
+                    step:           0.01
                 }
                 ListElement {
                     title:          qsTr("Differential gain (MPC_Z_VEL_D_ACC)")
@@ -102,7 +102,7 @@ ColumnLayout {
                     param:          "MPC_Z_VEL_D_ACC"
                     min:            0
                     max:            1
-                    step:           0.001
+                    step:           0.005
                 }
             }
         }

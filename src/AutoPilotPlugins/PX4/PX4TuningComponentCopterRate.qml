@@ -72,7 +72,7 @@ ColumnLayout {
                     title:          qsTr("Differential Gain (MC_ROLLRATE_D)")
                     description:    qsTr("Damping: increase to reduce overshoots and oscillations, but not higher than really needed.")
                     param:          "MC_ROLLRATE_D"
-                    min:            0.0004
+                    min:            0.0
                     max:            0.01
                     step:           0.0002
                 }
@@ -80,7 +80,7 @@ ColumnLayout {
                     title:          qsTr("Integral Gain (MC_ROLLRATE_I)")
                     description:    qsTr("Generally does not need much adjustment, reduce this when seeing slow oscillations.")
                     param:          "MC_ROLLRATE_I"
-                    min:            0.1
+                    min:            0.0
                     max:            0.5
                     step:           0.025
                 }
@@ -113,7 +113,7 @@ ColumnLayout {
                     title:          qsTr("Integral Gain (MC_PITCHRATE_I)")
                     description:    qsTr("Generally does not need much adjustment, reduce this when seeing slow oscillations.")
                     param:          "MC_PITCHRATE_I"
-                    min:            0.1
+                    min:            0.0
                     max:            0.5
                     step:           0.025
                 }
@@ -139,7 +139,7 @@ ColumnLayout {
                     description:    qsTr("Generally does not need much adjustment, reduce this when seeing slow oscillations.")
                     param:          "MC_YAWRATE_I"
                     min:            0.04
-                    max:            0.4
+                    max:            1.0
                     step:           0.02
                 }
             }
